@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knockout Timer - A pomodoro timer made from Knockout.js</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="knockout-app" class="card">
+        <header>
+           Knockout Timer 🥊⏲️
+        </header>
+        <div class="card-section">
+           <h2>Good work for ya!</h2>
+           <p></p>
+           <div class="counter-ui-container">
+            <button>Work</button>
+            <button>Break</button>
+               <span class="minutes" data-bind="text: minutes"></span>
+               <span class="two-points">:</span>
+               <span class="seconds" data-bind="text: seconds"></span>
+            </div>
+            <button data-bind="click: start">Start</button>
+            <button data-bind="click: stop">Stop</button>
+            <p>
+              <span data-bind="text: phrase"></span>
+           </p>
+        </div>
+        <footer>
+           <span>A pomodoro timer made with Knockout.js</span>
+        </footer>
+     </div>
+
+     <script type='text/javascript' src='libs/knockout-3.5.1.js'></script>
+     <script src="script.js"></script>
+</body>
+</html>
