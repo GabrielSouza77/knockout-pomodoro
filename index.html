@@ -13,17 +13,17 @@
            Knockout Timer 🥊⏲️
         </header>
         <div class="card-section">
+           <button class="button-modes">Work</button>
+           <button class="button-modes">Break</button>
            <h2>Good work for ya!</h2>
            <p></p>
            <div class="counter-ui-container">
-            <button data-bind="click: changeToWork">Work</button>
-            <button data-bind="click: changeToBreak">Break</button>
                <span class="minutes" data-bind="text: minutes"></span>
                <span class="two-points">:</span>
                <span class="seconds" data-bind="text: seconds"></span>
             </div>
-            <button data-bind="click: start">Start</button>
-            <button data-bind="click: stop">Stop</button>
+            <button class="button-timer" data-bind="click: start">Start</button>
+            <button class="button-timer" data-bind="click: stop">Stop</button>
             <p>
               <span data-bind="text: phrase"></span>
            </p>
